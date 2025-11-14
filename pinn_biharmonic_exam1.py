@@ -14,10 +14,10 @@ device = torch.device("cuda" if torch.cuda.is_available() else "cpu")
 torch.manual_seed(0)
 np.random.seed(0)
 
-# Exact solution and source
+# Exact solution
 def u_exact(x, y):
     return 0.5 / np.pi**2 * np.sin(np.pi * x) * np.sin(np.pi * y)
-
+# source 
 def f_source(x, y):
     # f = Δ²u for u = (1 / (2π²)) sin(πx) sin(πy)
     # Δu = -2π² * (1 / (2π²)) sin(πx) sin(πy) = -sin(πx) sin(πy)
