@@ -253,7 +253,9 @@ u_xx_ex = -np.sin(np.pi * xg) * np.sin(np.pi * yg) / 2
 u_yy_ex = -np.sin(np.pi * xg) * np.sin(np.pi * yg) / 2
 u_xy_ex = np.pi**2 * np.cos(np.pi * xg) * np.cos(np.pi * yg) / (2*np.pi**2)
 
-# relative (corrected) errors
+  
+
+
 L2_err = np.linalg.norm(u_pred_test - u_ex_test) / np.linalg.norm(u_ex_test)
 
 H1_err = np.sqrt(
